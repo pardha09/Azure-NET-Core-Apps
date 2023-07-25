@@ -1,0 +1,41 @@
+https://www.youtube.com/watch?v=ZO7C6YmalXg&list=PLW6IC4y81fVvqxtGevoDkut23QA2mvPnb&index=1
+
+Asp.net Core Azure AD | Azure Ad Authentication using VS
+How to add Azure AD Authentication to Asp.net core MVC application in a Super Easy Way? This video has the answer. Visual studio is a great tool to configure Azure AD to asp.net core MVC application.  To configure Azure AD to asp.net core web application, We have to modify Startup.cs class and add Authentication & AddMicrosoftWebAppAuthentication, Define policy related to authentication. We need to create an app registration and use those details in Asp.net Core Web Application to configure Azure AD.
+App registration will have client_id which can act as an identity to Asp.net Core Web application that uses Azure AD. All the above said steps are needs to be done if you want to add Azure AD to Asp.net core application manually.
+---------------------------------------------------------------------------------
+Configuring Azure AD to Asp.net Core MVC Web Application is super easy if we use visual studio. When we are creating the project, In authentication type, we have to choose Microsoft Identity Platform. Once the project is created, it shows you a page where you can configure the Azure AD identity to your application. If you want to configure AzureAD Asp.net core Web application which is already existing, you can use connected services. Once you click on the "+" symbol, it shows you a popup where you can create/choose existing app registration to configure Azure AD to Asp.net Core Web Application. Once you click on ok button, It will create an app registration on your Azure Active directory and configure those details in Asp.net Core Web Application's appsettings.json file. Once you run the application, You will be redirected to Azure login page. Once you enter valid credentials It will open landing page of Asp.net Core Web Application Azure AD.
+
+
+
+
+
+
+########################################
+https://www.youtube.com/watch?v=S_xDAB_s-GM&list=PLW6IC4y81fVvqxtGevoDkut23QA2mvPnb&index=5
+This video demonstrate integrating Azure AD(Azure Active Directory) Authentication with Asp.Net Core Web Application. It can be done in 6 simple steps.
+1.Create new App Registration in Azure Active Directory
+2.Add required nuget packages.
+3. Generate Microsoft Identity Web Scaffolding Items
+4. Add Azure Ad Configuration
+5. Modify Startup.cs
+6. Configure Sign in and Signout in app registrations.
+After doing all these steps, Asp.Net Core Web Application will be integrated with Azure Active Directory(Azure AD) and Signin and Signout can be done.
+
+
+###############
+https://www.youtube.com/watch?v=5lRbtDSyjjs&list=PLW6IC4y81fVvqxtGevoDkut23QA2mvPnb&index=8
+
+
+Web Api Authentication And Authorization Using Azure ad | add roles to user
+
+Web Api Authentication And Authorization Using Azure ad | add roles to user:
+This video has demonstration of Web API Authentication and Authorization using Azure ad for logged in user. It is super easy to implement Web API role based authentication and authorization using Azure AD. First we need to create the project using Web API template with visual studio.  Then we have to use Microsoft.Identity.Web package from nuget package manager.  To implement Web API azure AD Authentication and authorization, first and foremost step that we need to do is, we have to modify Startup.cs class. In ConfigureServices method, we have to call services.AddAuthenticaiton().AddMicrosoftIdentityWebAppAuthentication() method. This will take care of adding Azure AD to Web API project.  Then you have to configure azure active directory (AD) details in appSettings.json.
+You have to write the action methods in controllers and decorate them with Authorize attribute. With this the .net changes are complete in implementing WebAPI azure ad authentication and authorization.
+--------------------------------------------------------------------------------------
+Azure Active Directory(ad) changes in Azure portal
+To implement webapi authentication and authorization azure ad (active directory), we have to create an app registration. App registration details must be configured in Web API azure ad authentication and authorization project's appsettings.json. We have to go to appregistration's --] expose as an api part and create uri and scopes for the app registration. After that, we need to go into Add roles, we have to define the roles. In this demo we have defined "Manager" role and the same we are using while testing it with post man. After that, We need to goto enterprise applications in azure active directory then go to app registration and assign roles to the user. By all these configurations, Web api authentication and authorization with azure ad (webapi azuread authentication authorization) will be done.
+-------------------------------------------------------------------------------------
+This demo has testing webapi authentication and authorization azure ad with postman. It is very simple. We have to configure oAuth2.0 in postman. This can be done by creating a new request, in authorization tab, choose 2.0, Add header to should be Request Header and type of flow should be implicit also you need to configure callback url and the same you have to configure in app registration. By all these settings we can get token for logged in user using postman tool. when user clicks on get new token, postman opens the browser. There user have to login and accept the consent. Azure will return the token and postman will preserve the token and the same we can use to access Web API authentication and authorization azure ad project's actions.
+
+https://www.youtube.com/watch?v=Vbk9l68QrHc
