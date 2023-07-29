@@ -21,6 +21,7 @@ namespace DependencyInjectionDemoApp.Controllers
         public IEnumerable<Employee> GetEmployeeList1() 
         { 
             var res = _employeeService.GetEmployee();
+            _employeeService.
             return res;
         }
 
