@@ -1,0 +1,5 @@
+A simple application to demo Dependency Injection
+Declared two interfaces Emp and Dept
+Created a class Empservices and impleted Emp and Dept
+Then DI them in constructor
+Registered them in Program.cs
