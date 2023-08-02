@@ -1,0 +1,7 @@
+preferences:
+
+ngrok http https://localhost:7041/
+
+https://localhost:7041/datagrid
+
+pardha@6nvvjg.onmicrosoft.com

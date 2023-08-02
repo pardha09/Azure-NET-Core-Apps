@@ -1,0 +1,251 @@
+{
+	"botrunsummary": [
+		{
+			"Topic": "Crypto Currency",
+			"Category": "Blockchain",
+			"MeetingDate": "08/08/2022",
+			"MeetingTime": "09:45:00 UTC",
+			"MeetingStatus": "Skipped",
+			"MeetingDuration": "01:45:53s",
+			"ReasonforSkip": "Only 1 eligble user",
+			"EligibleUsers": [
+				{
+					"EligibleUsersEmail": "Costas@watercooler.fun",
+					"Signature": "CV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				}
+
+			]
+		},
+		{
+			"Topic": "Crypto Currency",
+			"Category": "Blockchain",
+			"MeetingDate": "08/09/2022",
+			"MeetingTime": "09:45:00 UTC",
+			"MeetingStatus": "Skipped",
+			"MeetingDuration": "01:45:53s",
+			"ReasonforSkip": "Only 1 eligble user",
+			"EligibleUsers": [
+				{
+					"EligibleUsersEmail": "Hello@watercooler.fun",
+					"Signature": "CV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				}
+
+			]
+		},
+		{
+			"Topic": "Stocks",
+			"Category": "Finance",
+			"MeetingDate": "10/10/2022",
+			"MeetingTime": "09:45:00 UTC",
+			"MeetingStatus": "Completed",
+			"MeetingDuration": "01:45:53s",
+			"ReasonforSkip": "",
+			"EligibleUsers": [
+				{
+					"EligibleUsersEmail": "Costas@watercooler.fun",
+					"Signature": "CV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "Rony@watercooler.fun",
+					"Signature": "RT",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "Cameron@watercooler.fun",
+					"Signature": "CB",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "pardha@watercooler.fun",
+					"Signature": "PV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				}
+
+			]
+		},
+		{
+			"Topic": "Mutual Funds",
+			"Category": "Finance",
+			"MeetingDate": "10/11/2022",
+			"MeetingTime": "09:45:00 UTC",
+			"MeetingStatus": "Completed",
+			"MeetingDuration": "01:45:53s",
+			"ReasonforSkip": "",
+			"EligibleUsers": [
+				{
+					"EligibleUsersEmail": "Costas@watercooler.fun",
+					"Signature": "CV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "Rony@watercooler.fun",
+					"Signature": "RT",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "Cameron@watercooler.fun",
+					"Signature": "CB",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "pardha@watercooler.fun",
+					"Signature": "PV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				}
+
+			]
+		},
+		{
+			"Topic": "Solar",
+			"Category": "Renewable Energy",
+			"MeetingDate": "09/10/2022",
+			"MeetingTime": "09:45:00 UTC",
+			"MeetingStatus": "Completed",
+			"MeetingDuration": "01:45:53s",
+			"ReasonforSkip": "",
+			"EligibleUsers": [
+				{
+					"EligibleUsersEmail": "1@watercooler.fun",
+					"Signature": "KL",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "2@watercooler.fun",
+					"Signature": "PV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "3@watercooler.fun",
+					"Signature": "TV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "4@watercooler.fun",
+					"Signature": "KV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "5@watercooler.fun",
+					"Signature": "MV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				}
+
+			]
+		},
+		{
+			"Topic": "Solar",
+			"Category": "Renewable Energy",
+			"MeetingDate": "09/11/2022",
+			"MeetingTime": "09:45:00 UTC",
+			"MeetingStatus": "Completed",
+			"MeetingDuration": "01:45:53s",
+			"ReasonforSkip": "",
+			"EligibleUsers": [
+				{
+					"EligibleUsersEmail": "x@watercooler.fun",
+					"Signature": "KL",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "y@watercooler.fun",
+					"Signature": "PV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "z@watercooler.fun",
+					"Signature": "TV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "a@watercooler.fun",
+					"Signature": "KV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "b@watercooler.fun",
+					"Signature": "MV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				}
+
+			]
+		},
+
+		{
+			"Topic": "Solar",
+			"Category": "Renewable Energy",
+			"MeetingDate": "01/12/2022",
+			"MeetingTime": "09:45:00 UTC",
+			"MeetingStatus": "Completed",
+			"MeetingDuration": "01:45:53s",
+			"ReasonforSkip": "",
+			"EligibleUsers": [
+				{
+					"EligibleUsersEmail": "1@watercooler.fun",
+					"Signature": "KL",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "2@watercooler.fun",
+					"Signature": "PV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "3@watercooler.fun",
+					"Signature": "TV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "4@watercooler.fun",
+					"Signature": "KV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "5@watercooler.fun",
+					"Signature": "MV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				}
+
+			]
+		},
+		{
+			"Topic": "Solar",
+			"Category": "Renewable Energy",
+			"MeetingDate": "01/13/2022",
+			"MeetingTime": "09:45:00 UTC",
+			"MeetingStatus": "Completed",
+			"MeetingDuration": "01:45:53s",
+			"ReasonforSkip": "",
+			"EligibleUsers": [
+				{
+					"EligibleUsersEmail": "1@watercooler.fun",
+					"Signature": "KL",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "2@watercooler.fun",
+					"Signature": "PV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "3@watercooler.fun",
+					"Signature": "TV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "4@watercooler.fun",
+					"Signature": "KV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				},
+				{
+					"EligibleUsersEmail": "5@watercooler.fun",
+					"Signature": "MV",
+					"FreeTimeSlot": "15:00:00-20:45:00 UTC"
+				}
+
+			]
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"topfinvetopics": 
+	[
+
+				{
+					"Topic": "Crypto",
+					"Percentage": "10%"
+				},
+				{
+					"Topic": "NFT",
+					"Percentage": "33%"
+				},
+				{
+					"Topic": "Solar",
+					"Percentage": "40%"
+				},
+				{
+					"Topic": "Stocks",
+					"Percentage": "20%"
+				},
+					{
+					"Topic": "401k",
+					"Percentage": "19%"
+				}
+	]
+}

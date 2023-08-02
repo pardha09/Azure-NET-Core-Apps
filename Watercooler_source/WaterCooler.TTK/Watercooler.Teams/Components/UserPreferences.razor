@@ -1,0 +1,205 @@
+﻿@page "/userpreferences"
+@using Microsoft.Extensions.Configuration
+@using Microsoft.AspNetCore.Hosting
+@using Microsoft.Extensions.Hosting
+@using Watercooler.Teams.Models
+@inject TeamsFx teamsfx
+@inject TeamsUserCredential teamsUserCredential
+@inject MicrosoftTeams MicrosoftTeams
+@inject IWebHostEnvironment HostEnvironment
+@inject IConfiguration Configuration
+@inject NavigationManager MyNavigationManager
+@inject IHttpClientFactory _clientFactory
+
+<div>
+    <div class="watercoolercontainer-header">
+        <div class="watercoolercontainer-userdetails">
+            <span class="watercoolercontainer-text segoeUIRegular14-Ms-FontSize-14FontSizes.Size14">
+                <span class="watercoolercontainer-text01">Welcome</span>
+                <span class="watercoolercontainer-text02">
+                    @if (userName != null) 
+                    {
+                       @userName.Split(" ")[0];
+                    }
+                      
+                </span>
+            </span>
+            <span class="watercoolercontainer-text03 small400">
+                <span class="watercoolercontainer-text04">Not You?</span>
+                <span class="watercoolercontainer-text05">Signout</span>
+            </span>
+        </div>
+        <div class="watercoolercontainer-logosm">
+            <img src="images/wcicon.svg" class="watercoolercontainer-group89" />
+        </div>
+    </div>
+    <div class="watercoolercontainer-info">
+        <div class="watercoolercontainer-frame-base">
+            <div class="watercoolercontainer-iconstringstack">
+                <span class="watercoolercontainer-text06">
+                    <span class="watercoolercontainer-text07">
+                        <span class="alert-content">
+                            We’re convinced you deserve a 15-minute break, all it
+                            takes is two easy steps:
+                        </span>
+                        <br />
+                        <span></span>
+                    </span>
+                    <span class="watercoolercontainer-text11">
+                        <span>
+                            Pick your passions and choose how often you’d like to
+                            meet.
+                        </span>
+                        <br />
+                        <span>
+                            We’ll schedule your break and send you a link to a Teams
+                            meeting with collegues who share your interests.
+                        </span>
+                        <br />
+                        <span>
+                            Choose three passions from the following options!
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="watercoolercontainer-frominput">
+        <div class="watercoolercontainer-frame625751">
+            <div class="watercoolercontainer-frame6257511">
+                <div class="watercoolercontainer-frame6257512">
+                    <span class="watercoolercontainer-text17 large400">
+                        Category 1
+                    </span>
+
+                    <div>
+                        <FluentCheckbox Id=""> Topic 1</FluentCheckbox>
+                    </div>
+                    <div>
+                        <FluentCheckbox Id=""> Topic 2</FluentCheckbox>
+                    </div>
+                    <div>
+                        <FluentCheckbox Id=""> Topic 3</FluentCheckbox>
+                    </div>
+
+                </div>
+                <div class="watercoolercontainer-frame6257512">
+                    <span class="watercoolercontainer-text17 large400">
+                        Category 2
+                    </span>
+
+                    <div>
+                        <FluentCheckbox Id=""> Topic A</FluentCheckbox>
+                    </div>
+                    <div>
+                        <FluentCheckbox Id=""> Topic B</FluentCheckbox>
+                    </div>
+                    <div>
+                        <FluentCheckbox Id=""> Topic C</FluentCheckbox>
+                    </div>
+
+                </div>
+            </div>
+            <div class="watercoolercontainer-frame6257511">
+                <FluentRadioGroup Name="frequency">
+                    <h3 class="large400">
+                        How often would you like to meet
+                    </h3>
+
+                    <FluentRadio Value="">Daily</FluentRadio>
+                    <FluentRadio Value="">Weekly</FluentRadio>
+                    <FluentRadio Value="">Monthly</FluentRadio>
+
+                </FluentRadioGroup>
+            </div>
+            <div class="watercoolercontainer-frame6257521">
+                <span class="watercoolercontainer-text34 large400">
+                    Your working hours
+                </span>
+                <div class="watercoolercontainer-frame6257516">
+                    <div class="watercoolercontainer-drop-down-active">
+                        <label for="cars" class="watercoolercontainer-label">
+                            <span class="watercoolercontainer-text35 captionRegular">
+                                From
+                            </span>
+
+                        </label>
+
+                        <FluentSelect Appearance="Appearance.Filled">
+
+                            <FluentOption Value=>xxx</FluentOption>
+
+                        </FluentSelect>
+
+                    </div>
+                    <div class="watercoolercontainer-drop-down-active1">
+                        <div class="watercoolercontainer-label1">
+                            <span class="watercoolercontainer-text38 captionRegular">
+                                To
+                            </span>
+                        </div>
+                        <FluentSelect Appearance="Appearance.Filled">
+
+                            <FluentOption Value="">YYYYYYYYYY</FluentOption>
+
+                        </FluentSelect>
+
+                        <div class="buttonRow">
+                            <fluent-button appearance="Neutral">Back</fluent-button>
+
+                            <fluent-button appearance="accent">Update</fluent-button>
+
+
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@code
+{
+    string userName;
+    string errorMessage;
+    bool isInTeams;
+    bool isLoading = true;
+    string errormessage;
+    UserPreferencesModel preferences;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+
+        if (firstRender)
+        {
+            isInTeams = await MicrosoftTeams.IsInTeams();
+
+            if (isInTeams)
+            {
+                var user = await teamsUserCredential.GetUserInfoAsync();
+                userName = user.DisplayName;
+            }
+            else
+            {
+                errorMessage = "Not running in Microsoft Teams.";
+            }
+
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+    protected override async Task OnInitializedAsync()
+
+    {
+        var client = _clientFactory.CreateClient("WebClient");
+        try
+        {
+            preferences = await client.GetFromJsonAsync<UserPreferencesModel>("data/Preferences.json");
+            errormessage = null;
+        }
+        catch (Exception ex)
+        {
+            errormessage = $"There was an error fetching User preferences data: {ex.Message}";
+        }
+    }
+}

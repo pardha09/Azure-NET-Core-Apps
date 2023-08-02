@@ -1,0 +1,9 @@
+﻿namespace Watercooler.Teams.Models
+{
+    public class WorkinghourstoModel
+    {
+        public string id { get; set; }
+        public string name { get; set; }
+    }
+
+}

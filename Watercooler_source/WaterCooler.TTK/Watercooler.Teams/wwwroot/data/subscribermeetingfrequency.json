@@ -1,0 +1,26 @@
+{
+	"subscribermeetingfrequency": 
+	[
+
+				{
+					"Frequency": "Daily",
+					"Percentage": "10%"
+				},
+				{
+					"Frequency": "Weekly",
+					"Percentage": "1%"
+				},
+				{
+					"Frequency": "Monthly",
+					"Percentage": "15%"
+				},
+				{
+					"Frequency": "Unsubscribed",
+					"Percentage": "1%"
+				},
+					{
+					"Frequency": "Unconfigured",
+					"Percentage": "1%"
+				}
+	]
+}

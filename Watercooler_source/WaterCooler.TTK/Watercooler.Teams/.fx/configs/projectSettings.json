@@ -1,0 +1,29 @@
+{
+    "appName": "WaterCooler.Teams",
+    "projectId": "a6765bca-6b40-4f2f-8fed-762231feca93",
+    "version": "2.1.0",
+    "isFromSample": false,
+    "solutionSettings": {
+        "name": "fx-solution-azure",
+        "version": "1.0.0",
+        "hostType": "Azure",
+        "azureResources": [],
+        "capabilities": [
+            "Tab"
+        ],
+        "activeResourcePlugins": [
+            "fx-resource-frontend-hosting",
+            "fx-resource-identity",
+            "fx-resource-aad-app-for-teams",
+            "fx-resource-local-debug",
+            "fx-resource-appstudio",
+            "fx-resource-cicd",
+            "fx-resource-api-connector"
+        ]
+    },
+    "programmingLanguage": "csharp",
+    "pluginSettings": {
+        "projectFilePath": "C:\\Work\\Projects\\Watercooler\\local_source\\WaterCooler.TTK\\Watercooler.Teams\\WaterCooler.Teams\\WaterCooler.Teams.csproj"
+    },
+    "isFirstTimeOpenProject": false
+}
