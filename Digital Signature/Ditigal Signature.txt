@@ -1,0 +1,32 @@
+YoutTube Link: https://www.youtube.com/watch?v=stsWa9A3sOM
+
+This video explains the purpose of digital signatures and how they work.  It begins by reviewing encryption and decryption using an asymmetric pair of keys, and then explains the significance of this when it comes to digital signatures, namely that it doesn’t matter which of the key pair is made public and which is kept private.  The video then illustrates the digital signing process.  Specifically, the creation of a hash value for the document (also known as a digest) using a hash algorithm such as SHA256 (which was created by the National Security Agency).  It shows how document digest is then encrypted using the sender’s private key before being attached to the document.  When the document is received, the recipient decrypts the digest using the sender’s public key.  The recipient also recalculates the hash.  If the hash values match, the recipient can be confident that document has not been tampered with in transit.  The role of a certification authority is also covered.  A certification authority issues its customer with a special file called a digital certificate which binds their public key to identifying information.  This video also mentions the importance of digital signatures which it comes to cryptocurrencies.  A cryptocurrency such as Bitcoin requires a secure mechanism for updating its decentralised ledger.
+
+- Digital signature rely on asymetric key cryptography
+- Document contents are hashed to create a digest
+- Digest is encrypted by the sender with their private key
+- Digest is embeded in the document which is then sent 
+- Recipient decrypts the digest using the Sender's public key
+- Recipient calculates a hash from the document contents
+- If the recalculatd digest match the decrypted digest, the document has not been 
+  tampered with since it was sent
+- Digital certificate issue by certification authority guarantees sender's identity
+- Digital certifcate contains public key along with other information about the sender
+
+--------------------
+Sheela and Albert two users:
+If sheela wants to send a secret message to Albert, she needs Asymmetric pair of keys
+The compute program can generate this for her. She sends Albert one of the key and she keeps
+the other key with herself. Instead of sending Albert a key she could put that key in a public place
+for him to go and fetch for himself. It doesn't matter if someone else gets a copy of the public key.
+Albert uses the public key to encrypt his message when Albert has encrypted the message he sends Sheela
+the cipertext only sheela can decrypt the ciphertext because only sheela has the matching key the 
+private key truth be told most people don't need to worry whats really going on because the whole process
+is taken care of behind the scenes my programs built into web browsers or email applications but what 
+do asymmetric have to do with digital signatures? Well it so happens that doesn't matter which one of the
+pair of keys made public and which one is kept private if you encrypt message with either one then the 
+other and the only the other can be used to decrypt it as long as she doesn't change her mind later sheela
+can decide which one of the keys will be private and which one will be public. This is the curcial feature
+of asymmetric key cryptography that makes digital signatures possible. Now lets think about why we even need
+digital signatures.
+
